@@ -15,7 +15,9 @@ class TableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
+        layer.cornerRadius = 5.0
+        mainImg.clipsToBounds = true
     }
     
     func configureCell(image: UIImage, text: String) {
