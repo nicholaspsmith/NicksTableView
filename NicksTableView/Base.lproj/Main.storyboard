@@ -56,8 +56,8 @@
                                                         <constraint firstAttribute="width" constant="80" id="aGa-Aq-KSp"/>
                                                     </constraints>
                                                 </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="1" translatesAutoresizingMaskIntoConstraints="NO" id="hgv-Ms-mUN">
-                                                    <rect key="frame" x="112" y="8" width="474" height="78"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="hgv-Ms-mUN">
+                                                    <rect key="frame" x="112" y="8" width="466" height="78"/>
                                                     <fontDescription key="fontDescription" name="Kailasa" family="Kailasa" pointSize="23"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
@@ -67,8 +67,8 @@
                                                 <constraint firstItem="Vq1-KR-LK2" firstAttribute="top" secondItem="Y9v-0y-Vne" secondAttribute="topMargin" id="BMk-es-ooa"/>
                                                 <constraint firstItem="hgv-Ms-mUN" firstAttribute="bottom" secondItem="Y9v-0y-Vne" secondAttribute="bottomMargin" id="GHD-33-Yx6"/>
                                                 <constraint firstItem="hgv-Ms-mUN" firstAttribute="top" secondItem="Y9v-0y-Vne" secondAttribute="topMargin" id="JLn-E0-9Ej"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="hgv-Ms-mUN" secondAttribute="trailing" constant="6" id="Mwu-qE-v1j"/>
-                                                <constraint firstItem="hgv-Ms-mUN" firstAttribute="leading" secondItem="Vq1-KR-LK2" secondAttribute="trailing" constant="24" id="fZ1-On-tvP"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="hgv-Ms-mUN" secondAttribute="trailing" constant="10" id="Mwu-qE-v1j"/>
+                                                <constraint firstItem="hgv-Ms-mUN" firstAttribute="leading" secondItem="Vq1-KR-LK2" secondAttribute="trailing" constant="15" id="fZ1-On-tvP"/>
                                                 <constraint firstItem="Vq1-KR-LK2" firstAttribute="leading" secondItem="Y9v-0y-Vne" secondAttribute="leadingMargin" id="jRW-gX-ujk"/>
                                             </constraints>
                                         </tableViewCellContentView>
