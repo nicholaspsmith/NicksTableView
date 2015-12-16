@@ -17,10 +17,24 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        if let cell = tableView.dequeueReusableCellWithIdentifier("reusableCell") as? TableViewCell {
+        if let cell = tableView.dequeueReusableCellWithIdentifier("ReusableCell") as? TableViewCell {
+            
+            var img: UIImage!
+            
+            let url = NSURL(string: uglyThings[indexPath.row])!
+            if let data = NSData(contentsOfURL: url) {
+                img = UIImage(data: data)
+            } else {
+                img = UIImage(named: "dog")
+            }
+            
+            cell.configureCell(img, text: uglyTitles[indexPath.row])
+            
             return cell
         } else {
             return TableViewCell()

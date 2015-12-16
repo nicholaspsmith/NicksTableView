@@ -42,7 +42,7 @@
                                 <rect key="frame" x="0.0" y="46" width="600" height="554"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="95" id="nlH-5z-bbA">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" rowHeight="95" id="nlH-5z-bbA" customClass="TableViewCell" customModule="NicksTableView" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="600" height="95"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="nlH-5z-bbA" id="Y9v-0y-Vne">
@@ -72,6 +72,10 @@
                                                 <constraint firstItem="Vq1-KR-LK2" firstAttribute="leading" secondItem="Y9v-0y-Vne" secondAttribute="leadingMargin" id="jRW-gX-ujk"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="mainImg" destination="Vq1-KR-LK2" id="Bma-aM-52D"/>
+                                            <outlet property="mainLbl" destination="hgv-Ms-mUN" id="1kT-kr-Yoo"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -87,6 +91,9 @@
                             <constraint firstAttribute="trailing" secondItem="dUW-PR-RVU" secondAttribute="trailing" id="vAS-wE-yLM"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="1C6-Ka-hTP" id="o9o-Em-G9n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
